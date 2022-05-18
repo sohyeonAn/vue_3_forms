@@ -51,30 +51,32 @@
 </template>
 
 <script>
+import BaseInput from '../components/BaseInput.vue'
 export default {
   data() {
     return {
       categories: [
-        "sustainability",
-        "nature",
-        "animal welfare",
-        "housing",
-        "education",
-        "food",
-        "community",
+        'sustainability',
+        'nature',
+        'animal welfare',
+        'housing',
+        'education',
+        'food',
+        'community'
       ],
       event: {
-        category: "",
-        title: "",
-        description: "",
-        location: "",
+        category: '',
+        title: '',
+        description: '',
+        location: '',
         pets: 1,
         extras: {
           catering: false,
-          music: false,
-        },
-      },
-    };
+          music: false
+        }
+      }
+    }
   },
-};
+  components: { BaseInput }
+}
 </script>
